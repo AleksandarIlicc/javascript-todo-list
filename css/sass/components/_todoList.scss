@@ -1,0 +1,63 @@
+.todo {
+    &__header {
+        width: 90%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input {
+        width: 85%;
+        height: 100%;
+        font-size: $default-fs;
+        padding: 1.5rem;
+        border: none;
+        outline: none;
+    }
+
+    &__list {
+        list-style-type: none;
+        width: 90%;
+        height: 100%;
+        margin-top: 3rem;
+        overflow-y: auto;
+    }
+
+    &__item {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .3s ease-in;
+        
+        background: rgba(255, 255, 255, 0.5);
+        
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        
+        &--delete {
+            transform: translateY(10rem) rotate(15deg);
+            opacity: 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__task {
+        font-size: $default-fs;
+        width: 17rem;
+        overflow-x: auto;
+
+        &--check {
+            text-decoration: line-through;
+            color: $red-cl;
+        }
+    }
+
+    &__date {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,49 @@
+.btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &__check {
+        border: 1px solid $green-cl;
+        border-radius: 2px;
+        margin-right: 1rem;
+        transition: all .3s ease;
+
+        &--active {
+            color: $white-cl;
+            background: $green-cl;
+        }
+
+        &:hover,
+        &:hover .icon__check {
+            color: $white-cl;
+            background: $green-cl;
+        }
+    }
+
+    &__trash {
+        border: 1px solid $red-cl;
+        border-radius: 2px;
+        transition: all .3s ease;
+
+        &:hover,
+        &:hover .icon__trash {
+            color: $white-cl;
+            background: $red-cl;
+        }
+    }
+
+    &__submit {
+        width: 15%;
+        height: 100%;
+        border: none;
+        background: $grey-light;
+        transition: background .3s ease;
+        
+        &:hover {
+            background: $grey-dark;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.icon {    
+    &__check {
+        color: $green-cl;
+        transition: all .3s ease;
+
+        &--active {
+            color: rgb(255, 255, 255);
+        }
+    }
+    
+    &__trash {
+        color: $red-cl;
+        transition: all .3s ease;
+    }
+}
